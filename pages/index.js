@@ -3,6 +3,7 @@ import Banner from '../components/Banner'
 import Header from '../components/Header'
 import SmallCard from '../components/SmallCard'
 import MediumCard from '../components/MediumCard'
+import LargeCard from '../components/LargeCard'
 
 
 export default function Home({exploreData, cardData}) {
@@ -38,6 +39,12 @@ export default function Home({exploreData, cardData}) {
           </div>
             
         </section>
+        <LargeCard
+          img="/assets/images/largecard.webp"
+          title="this job is suck."
+          description="I want to quit"
+          buttonText="Get Inspiration"
+        />
       </main>
     </div>
   )
