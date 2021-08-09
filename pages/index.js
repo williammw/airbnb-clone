@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
 import SmallCard from '../components/SmallCard'
+import MediumCard from '../components/MediumCard'
 
-export default function Home({exploreData}) {
+
+export default function Home({exploreData, cardData}) {
   return (
     <div className="">
       <Head>
@@ -21,9 +23,20 @@ export default function Home({exploreData}) {
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
           {/* Server Render */}
-          {exploreData?.map((item) =>(
-            <SmallCard img={item.img} distance={item.distance} location={item.location} />
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {exploreData?.map((item) =>(
+              <SmallCard key={item.img} img={item.img} distance={item.distance} location={item.location} />
+            ))}
+          </div>
+        </section>
+        <section >
+          <h2 className="text-4xl font-semibold py-8" >Live Anywhere</h2>
+          <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -m-3">
+            {cardData?.map( item => (
+              <MediumCard key={item.img} img={item.img} title={item.title} />
+            ))}
+          </div>
+            
         </section>
       </main>
     </div>
@@ -35,9 +48,14 @@ export async function getStaticProps(){
     (res) => res.json()
   )
 
+  const cardData = await fetch('http://localhost:3000/api/zp1').then(
+    (res) => res.json()
+  )
+
   return{
     props : {
-      exploreData
+      exploreData,
+      cardData
     }
   }
 }
