@@ -54,11 +54,12 @@ export default function Home({exploreData, cardData}) {
 }
 
 export async function getStaticProps(){
-  const exploreData = await fetch('http://localhost:3000/api/homeicon').then(
+  
+  const exploreData = await fetch(`${process.env.BASE_URL}api/homeicon`).then(
     (res) => res.json()
   )
 
-  const cardData = await fetch('http://localhost:3000/api/zp1').then(
+  const cardData = await fetch(`${process.env.BASE_URL}api/zp1`).then(
     (res) => res.json()
   )
 
