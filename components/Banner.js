@@ -4,7 +4,7 @@ function Banner() {
   return (
     <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700]">
       <Image 
-        src='https://wongmw.com/assets/images/banner.webp' 
+        src='https://imagedelivery.net/Y07ySA3u_Km8xu1A8ejC2g/e024c8b2-0789-40f4-6be1-80d4f296d900/public' 
         layout="fill" 
         objectFit="cover"/>
       <div className="absolute top-1/2 w-full text-center">

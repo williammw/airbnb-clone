@@ -41,7 +41,7 @@ export default function Home({exploreData, cardData}) {
             
         </section>
         <LargeCard
-          img="https://wongmw.com/assets/images/largecard.webp"
+          img="https://imagedelivery.net/Y07ySA3u_Km8xu1A8ejC2g/83b0cf87-31f2-4fc9-434a-4c42fca79f00/public"
           title="this job is suck."
           description="I want to quit"
           buttonText="Get Inspiration"

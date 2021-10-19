@@ -38,7 +38,7 @@ export default function Header() {
       {/* Left */}
       <div className="relative flex items-center h-10 cursor-pointer my-auto" >
         <Image
-          src='https://wongmw.com/assets/images/airbnb-logo.svg'
+          src='https://imagedelivery.net/Y07ySA3u_Km8xu1A8ejC2g/cd174566-0a62-4656-a50e-cd67a201d200/public'
           layout='fill'
           alt='airbnb logo'
           objectFit="contain"
