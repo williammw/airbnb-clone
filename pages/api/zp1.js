@@ -3,7 +3,7 @@
 export default function showIcon(req, res){
   res.status(200).json([
     {
-      "img": "https://imagedelivery.net/Y07ySA3u_Km8xu1A8ejC2g/71d70d93-104b-4edd-0051-51635082bb00/public.webp",
+      "img": "https://imagedelivery.net/Y07ySA3u_Km8xu1A8ejC2g/71d70d93-104b-4edd-0051-51635082bb00/public",
       "title": "Outdoor getaways"
     },
     {
